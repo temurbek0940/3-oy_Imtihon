@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    
+    <div class="mx-auto max-w-7xl   rounded-xl">
+        <h1 class="text-center pt-5 text-5xl font-medium text-white mb-5">Pizza Order</h1>
+        <form  id="form" class="flex flex-col gap-5">
+            <input class="max-w-2xl pl-6 pt-5 pb-5 rounded-2xl opacity-75 outline-none w-96 text-gray-500 mx-auto" type="text" name="user_name" placeholder="Enter you name" required>
+            <input class="max-w-2xl pl-6 pt-5 pb-5 rounded-2xl opacity-75 outline-none w-96 text-gray-500 mx-auto" type="tel" name="user_phone" placeholder="Enter you phone" required>
+            <input class="  max-w-2xl pl-6 pt-5 pb-5 rounded-2xl opacity-75 outline-none w-96 text-gray-500 mx-auto" type="text" name="user_email" placeholder="Enter you address..." required>
+            <div class="flex justify-center mt-5">
+               <h3 class="text-white font-medium text-2xl mt-2 mr-5">Dough thickness:</h3>
+                <select   id="shop-select" name="inpt" class="shop-select w-80 pt-3 pb-3 rounded-lg opacity-70 pl-5 outline-none">
+                    <option  selected disabled class="form-select">none</option>
+                    <option data-push="10" value="Thin" name="meat" class="form-select">Thin</option>
+                    <option data-push="12" value="Medium" name="meat" class="form-select">Medium</option>
+                    <option data-push="15" value="Thick" name="meat" class="form-select">Thick</option>
+                </select>
+                        </div>
+                        <div class=" card  flex justify-center mt-7">
+                            <label class="flex text-3xl text-white gap-5 font-medium" >
+                                Size:
+                                
+                                <input data-push="10" class="hidden"  value="25" type="radio" name="size" id="size25sm">
+                                <label  class="text-2xl font-medium text-white  ml-4 pizza" for="size25sm" >
+                                    25sm
+                                </label>
+                                <input data-push="12" class="hidden" value="30" type="radio" name="size" id="size30sm">
+                                <label class="text-2xl font-medium text-white  pizza" for="size30sm" >
+                                    30sm
+                                </label>
+                                <input data-push="15" class="hidden" value="35" type="radio" name="size" id="size35sm">
+                                <label class="text-2xl font-medium text-white pizza" for="size35sm">
+                                    35sm
+                                </label>
+                            </label>
+                        </div>
+                        
+                        <div class="mx-auto">
+                            <h3 class="text-2xl text-white font-medium">Order Pizza :</h3>
+                            <div class="form2">
+                                <label class="text-2xl text-white">
+                                    <input data-push="5" value="Tomato" class="mt-1 mr-3" type="checkbox">
+                                    Tomato
+                                </label>
+                                <label class="text-2xl text-white">
+                                    <input data-push="5" value="Turkey meat" class="mt-1 mr-3" type="checkbox">
+                                    Turkey meat
+                                </label>
+                                <label class="text-2xl text-white">
+                                    <input data-push="5" value="Olive" class="mt-1 mr-3" type="checkbox">
+                                    Olive
+                                </label>
+                                <label class="text-2xl text-white">
+                                    <input data-push="5" value="Pickled cucember" class="mt-1 mr-3" type="checkbox">
+                                    Pickled cucember
+                                </label>
+                                <label class="text-2xl text-white">
+                                    <input data-push="5" value="Mushroom" class="mt-1 mr-3" type="checkbox">
+                                    Mushroom
+                                </label>
+                                <label class="text-2xl text-white">
+                                    <input data-push="5" value=" Horse meat" class="mt-1 mr-3" type="checkbox">
+                                    Horse meat
+                                </label>
+                            </div>
+                            <h3 class="text-2xl text-white font-medium mt-5">Add:</h3>
+                            <div class="form2">
+                                <label class="text-2xl text-white">
+                                    <input data-push="3" value="Pepper"   class="mt-2 mr-3" type="checkbox">
+                                    Pepper
+                                </label>
+                                <label class="text-2xl text-white">
+                                    <input data-push="3" value=" Saussages"   class="mt-2 mr-3" type="checkbox">
+                                    Saussages
+                                </label>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <audio controls:hide autoplay>
+                            <source src="https://music.apple.com/uz/album/dagestan-feat-timaro-remix/1641688817?i=1641688819" type="audio/mp3">
+                        </audio>
+                        
+                        
+                        
+                        mu
+                        <button class="mb-16  bg-orange-400 pt-4 pb-4 w-60 rounded-2xl hover:bg-orange-300 text-white font-medium text-2xl mx-auto" type="submit">Save</button>
+                        <ul class="  mx-auto gap-5   bg-white rounded-xl " id="list"></ul>
+                    </form>
+                </div>
+                
+                
+                
+                
+                
+                <script  src="app.js"></script>
+                <script src="https://cdn.tailwindcss.com"></script>
+            </body>
+            </html>
